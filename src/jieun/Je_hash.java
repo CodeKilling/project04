@@ -26,9 +26,15 @@ public class Je_hash {
 		System.out.print("학번 입력 : "); stNum = sc.next();
 		System.out.print("이름 입력 : "); name = sc.next();
 		
-		StDTO st = new StDTO();
-		st.setStNum(stNum); st.setName(name);
-		map.put(stNum, st);
+		if(map.containsKey(stNum)) {
+			System.out.println("이미 등록된 학번입니다.");
+		}else {
+			StDTO st = new StDTO();
+			st.setStNum(stNum); st.setName(name);
+			map.put(stNum, st);
+			System.out.println("등록 완료");
+		}
+		
 	}
 	public void view() {
 		System.out.println("--- 모든 정보 보기 ---");

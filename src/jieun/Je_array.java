@@ -35,6 +35,7 @@ public class Je_array {
 			StDTO st = new StDTO();
 			st.setStNum(stNum); st.setName(name);
 			arr.add(st);
+			System.out.println("등록 완료");
 		}
 		
 	}
