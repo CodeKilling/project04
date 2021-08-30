@@ -13,7 +13,7 @@ public class sms_hmap {
 		HashMap<String, StDTO> map = new HashMap<String, StDTO>();
 		String name, stNum; int num;	
 		
-		System.out.println("HashMap으로 구현한 프로글매");
+		System.out.println("HashMap으로 구현한 프로그램");
 		
 		while(true) {
 			System.out.println("1.등록 2.보기 3.종료");
