@@ -21,10 +21,22 @@ public class Je_array {
 	public void enroll() {
 		System.out.print("학번 입력 : "); stNum = sc.next();
 		System.out.print("이름 입력 : "); name = sc.next();
+		boolean du = false;
 		
-		StDTO st = new StDTO();
-		st.setStNum(stNum); st.setName(name);
-		arr.add(st);
+		for(int i=0; i<arr.size(); i++) {
+			if(stNum.equals(arr.get(i).getName())) {
+				System.out.println("이미 등록된 학번입니다.");
+				du = true;
+				break;
+			}
+		}
+		
+		if(!du) {
+			StDTO st = new StDTO();
+			st.setStNum(stNum); st.setName(name);
+			arr.add(st);
+		}
+		
 	}
 	public void view() {
 		System.out.println("--- 모든 정보 보기 ---");
