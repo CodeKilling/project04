@@ -2,13 +2,18 @@ package main;
 
 import java.util.Scanner;
 
+
 import Kimhs.hs;
+import sangjin.Sj_Hash;
+import sangjin.Sj_array;
+
 
 public class MainClass {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int input = 0;
-		
+		Sj_array sjar = new Sj_array();
+		Sj_Hash sjhs = new Sj_Hash();
 		while(true) {
 			System.out.println("1.박상진");
 			System.out.println("2.김여진");
@@ -19,12 +24,14 @@ public class MainClass {
 			
 			switch(input) {
 			case 1:
+				sjar.main(args);
+				sjhs.main(args);
 				break;
 			case 2:
 				break;
 			case 3:
 				hs h = new hs();
-				h.listMethod();
+				h.select();
 				break;
 			case 4:
 				break;
@@ -35,5 +42,20 @@ public class MainClass {
 			}
 			
 		}
+	}
+
+	private static void sj() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void Sj_Hash() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void Sj_array() {
+		// TODO Auto-generated method stub
+		
 	}
 }

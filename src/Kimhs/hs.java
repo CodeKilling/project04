@@ -9,6 +9,25 @@ import java.util.Set;
 import main.StDTO;
 
 public class hs {
+	public void select() {
+		System.out.println("==== 학생관리 프로그램 ====");
+		System.out.println("입력할 형태 선택");
+		System.out.println("1.list    2.map\n입력 >>>>> ");
+		Scanner input = new Scanner(System.in);
+		int sel = input.nextInt();
+		switch(sel) {
+			case 1:
+				listMethod();
+				break;
+			case 2:
+				mapMethod();
+				break;
+			default :
+				System.out.println("1과 2중 하나만 입력하세요.");
+				break;
+			}
+		}
+	
 	public void listMethod() {
 		Scanner input = new Scanner(System.in);
 		ArrayList<StDTO> list = new ArrayList<StDTO>();
