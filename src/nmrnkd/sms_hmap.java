@@ -8,7 +8,8 @@ import main.StDTO;
 
 
 public class sms_hmap {
-	public static void main(String[] args) {
+	//public static void main(String[] args) {
+	public void display() {
 		Scanner input = new Scanner(System.in);
 		HashMap<String, StDTO> map = new HashMap<String, StDTO>();
 		String name, stNum; int num;	

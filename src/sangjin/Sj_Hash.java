@@ -7,7 +7,8 @@ import java.util.Scanner;
 import main.StDTO;
 
 public class Sj_Hash {
-	public static void main(String[] args) {
+	//public static void main(String[] args) {
+	public void display() {
 		int num;
 		HashMap<String, StDTO> map = new HashMap<String, StDTO>();
 		String name, stNum;

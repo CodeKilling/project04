@@ -6,7 +6,8 @@ import java.util.Scanner;
 import main.StDTO;
 
 public class sms_arr {
-	public static void main(String[] args) {
+	//public static void main(String[] args) {
+	public void display() {
 		Scanner input = new Scanner(System.in);
 		ArrayList<StDTO> list = new ArrayList<StDTO>();
 		

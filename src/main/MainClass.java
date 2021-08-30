@@ -19,8 +19,7 @@ public class MainClass {
 		Sj_Hash sjhs = new Sj_Hash();
 		sms_arr n_arr = new sms_arr();
 		sms_hmap n_hmap = new sms_hmap();
-		PsyST psy = new PsyST();
-		
+		PsyST psy = null;
 
 		while(true) {
 			System.out.println("1.박상진");
@@ -32,12 +31,12 @@ public class MainClass {
 			
 			switch(input) {
 			case 1:
-				sjar.main(args);
-				sjhs.main(args);
+				sjar.display();
+				sjhs.display();
 				break;
 			case 2:
-				n_arr.main(args);
-				n_hmap.main(args);
+				n_arr.display();
+				n_hmap.display();
 				break;
 			case 3:
 				hs h = new hs();
@@ -58,6 +57,7 @@ public class MainClass {
 				}
 				break;
 			case 5:
+				psy = new PsyST();
 				psy.display();
 				break;
 			default:
@@ -65,30 +65,5 @@ public class MainClass {
 			}
 			
 		}
-	}
-
-	private static void Nmrnkd_Hmap(String[] args) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private static void Nmrnkd_Arr(String[] args) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private static void sj() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private static void Sj_Hash() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private static void Sj_array() {
-		// TODO Auto-generated method stub
-		
 	}
 }

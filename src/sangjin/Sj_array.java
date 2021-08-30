@@ -6,7 +6,8 @@ import java.util.Scanner;
 import main.StDTO;
 
 public class Sj_array {
-	public static void main(String[] args) {
+	//public static void main(String[] args) {
+	public void display() {
 		ArrayList<StDTO> list = new ArrayList<StDTO>();
 		int num;
 		String name, stNum;
