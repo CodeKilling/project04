@@ -33,9 +33,9 @@ public class Sj_Hash {
 					StDTO s= map.get(it.next());
 					System.out.println(" 이름 : "+s.getName());
 					System.out.println(" 학번 : "+s.getStNum());
-				}
+				}break;
 			case 3:
-				System.out.println("프로그램 종료");
+				System.out.println("프로그램 종료_Hash");
 				return;
 			}
 		}

@@ -34,7 +34,7 @@ public class Sj_array {
 				}
 				break;
 			case 3:
-				System.out.println("프로그램 종료");
+				System.out.println("프로그램 종료_Array");
 				return;
 
 			}
