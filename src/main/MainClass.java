@@ -2,10 +2,14 @@ package main;
 
 import java.util.Scanner;
 
+import psy.PsyST;
+
 public class MainClass {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int input = 0;
+		
+		PsyST psy = new PsyST();
 		
 		while(true) {
 			System.out.println("1.박상진");
@@ -25,7 +29,11 @@ public class MainClass {
 			case 4:
 				break;
 			case 5:
+				psy.display();
 				break;
+			case 6:
+				System.out.println("Program Exit.");
+				System.exit(0);
 			default:
 				break;
 			}
