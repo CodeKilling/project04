@@ -3,22 +3,22 @@ package main;
 import java.util.Scanner;
 
 
-import jieun.*;
-import psy.PsyST;
 import Kimhs.hs;
 import sangjin.Sj_Hash;
 import sangjin.Sj_array;
+import nmrnkd.sms_arr;
+import nmrnkd.sms_hmap;
+
 
 
 public class MainClass {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int input = 0;
-		
-		PsyST psy = new PsyST();
 		Sj_array sjar = new Sj_array();
 		Sj_Hash sjhs = new Sj_Hash();
-		
+		sms_arr Nmrnkd_Arr = new sms_arr();
+		sms_hmap Nmrnkd_Hmap = new sms_hmap();
 		while(true) {
 			System.out.println("1.박상진");
 			System.out.println("2.김여진");
@@ -33,34 +33,46 @@ public class MainClass {
 				sjhs.main(args);
 				break;
 			case 2:
+				Nmrnkd_Arr(args);
+				Nmrnkd_Hmap(args);
 				break;
 			case 3:
 				hs h = new hs();
 				h.select();
 				break;
 			case 4:
-				System.out.println("1.ArrayList  2.HashMap");
-				input = sc.nextInt();
-				if(input==1) {
-					Je_array ja = new Je_array();
-					ja.display();
-				}else if(input==2) {
-					Je_hash jh = new Je_hash();
-					jh.display();
-				}else {
-					System.out.println("1번 또는 2번을 선택해주세요.");
-				}
 				break;
 			case 5:
-				psy.display();
 				break;
-			case 6:
-				System.out.println("Program Exit.");
-				System.exit(0);
 			default:
 				break;
 			}
 			
 		}
+	}
+
+	private static void Nmrnkd_Hmap(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void Nmrnkd_Arr(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void sj() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void Sj_Hash() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void Sj_array() {
+		// TODO Auto-generated method stub
+		
 	}
 }
