@@ -8,13 +8,14 @@ import main.StDTO;
 
 public class Je_hash {
 	private String name = null, stNum = null;
+	private int num = 0;
 	Scanner sc = new Scanner(System.in);
 	HashMap<String, StDTO> map = new HashMap<String, StDTO>();
 	public void display() {
 		boolean bool = true;
 		while(bool) {
 			System.out.println("1.등록  2.보기  3.종료");
-			int num = sc.nextInt();
+			num = sc.nextInt();
 			switch(num) {
 			case 1 : enroll(); break;
 			case 2 : view(); break;
@@ -37,14 +38,29 @@ public class Je_hash {
 		
 	}
 	public void view() {
-		System.out.println("--- 모든 정보 보기 ---");
-		Iterator<String> it = map.keySet().iterator();
-		while(it.hasNext()) {
-			StDTO s = map.get(it.next());
-			System.out.println("학번 : " + s.getStNum());
-			System.out.println("이름 : " + s.getName());
-			System.out.println("-------------------");
-		}
+		System.out.println("1.모두보기  2.검색");
+		num = sc.nextInt();
+		if(num==1) {
+			System.out.println("--- 모든 정보 보기 ---");
+			Iterator<String> it = map.keySet().iterator();
+			while(it.hasNext()) {
+				StDTO s = map.get(it.next());
+				System.out.println("학번 : " + s.getStNum());
+				System.out.println("이름 : " + s.getName());
+				System.out.println("-------------------");
+			}
+		}else if (num==2){
+			System.out.print("학번 입력 : "); stNum = sc.next();
+			if(map.containsKey(stNum)) {
+				StDTO s1 = map.get(stNum);
+				System.out.println("학번 : " + s1.getStNum());
+				System.out.println("이름 : " + s1.getName());
+			}else {
+				System.out.println("없는 학번입니다.");
+			}
+		}else {
+			System.out.println("1번 또는 2번을 입력해주세요.");
+		}	
 	}
 }
 	
