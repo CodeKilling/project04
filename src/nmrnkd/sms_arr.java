@@ -12,6 +12,8 @@ public class sms_arr {
 		
 		int num; String name, stNum;
 		
+		System.out.println("List로 구현합니다.");
+		
 		while(true) {
 			System.out.println("1.등록 2.보기 3.종료");
 			num = input.nextInt();

@@ -33,8 +33,8 @@ public class MainClass {
 				sjhs.main(args);
 				break;
 			case 2:
-				Nmrnkd_Arr(args);
-				Nmrnkd_Hmap(args);
+				Nmrnkd_Arr.main(args);
+				Nmrnkd_Hmap.main(args);
 				break;
 			case 3:
 				hs h = new hs();
