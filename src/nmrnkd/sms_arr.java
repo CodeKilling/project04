@@ -11,7 +11,7 @@ public class sms_arr {
 		ArrayList<StDTO> list = new ArrayList<StDTO>();
 		
 		int num; String name, stNum;
-		
+		System.out.println("이 시스템은 ArrayList를 사용한 프로그램 동작 후 HashMap을 사용한 프로그램이 동작합니다. ");
 		System.out.println("ArrayList로 구현한 프로그램");
 		
 		while(true) {
