@@ -3,10 +3,13 @@ package main;
 import java.util.Scanner;
 
 import Kimhs.hs;
+import jieun.Je_array;
+import jieun.Je_hash;
 import sangjin.Sj_Hash;
 import sangjin.Sj_array;
 import nmrnkd.sms_arr;
 import nmrnkd.sms_hmap;
+import psy.PsyST;
 
 public class MainClass {
 	public static void main(String[] args) {
@@ -16,6 +19,7 @@ public class MainClass {
 		Sj_Hash sjhs = new Sj_Hash();
 		sms_arr n_arr = new sms_arr();
 		sms_hmap n_hmap = new sms_hmap();
+		PsyST psy = new PsyST();
 		
 
 		while(true) {
@@ -40,8 +44,21 @@ public class MainClass {
 				h.select();
 				break;
 			case 4:
+				System.out.println("1.ArrayList  2.HashMap");
+				input = sc.nextInt();
+				if(input == 1)
+				{
+					Je_array ja = new Je_array();
+					ja.display();
+				}else if(input==2) {
+					Je_hash jh = new Je_hash();
+					jh.display();
+				}else {
+					System.out.println("1번 또는 2번을 선택해주세요.");
+				}
 				break;
 			case 5:
+				psy.display();
 				break;
 			default:
 				break;
