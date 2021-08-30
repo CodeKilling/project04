@@ -2,6 +2,7 @@ package main;
 
 import java.util.Scanner;
 
+import jieun.*;
 import sangjin.Sj_Hash;
 import sangjin.Sj_array;
 
@@ -29,6 +30,17 @@ public class MainClass {
 			case 3:
 				break;
 			case 4:
+				System.out.println("1.ArrayList  2.HashMap");
+				input = sc.nextInt();
+				if(input==1) {
+					Je_array ja = new Je_array();
+					ja.display();
+				}else if(input==2) {
+					Je_hash jh = new Je_hash();
+					jh.display();
+				}else {
+					System.out.println("1번 또는 2번을 선택해주세요.");
+				}
 				break;
 			case 5:
 				break;
