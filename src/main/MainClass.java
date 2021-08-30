@@ -8,8 +8,11 @@ import sangjin.Sj_Hash;
 import sangjin.Sj_array;
 import nmrnkd.sms_arr;
 import nmrnkd.sms_hmap;
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> nmrnkd
 
 public class MainClass {
 	public static void main(String[] args) {
@@ -17,8 +20,14 @@ public class MainClass {
 		int input = 0;
 		Sj_array sjar = new Sj_array();
 		Sj_Hash sjhs = new Sj_Hash();
+<<<<<<< HEAD
 		sms_arr Nmrnkd_Arr = new sms_arr();
 		sms_hmap Nmrnkd_Hmap = new sms_hmap();
+=======
+		sms_arr n_arr = new sms_arr();
+		sms_hmap n_hmap = new sms_hmap();
+		
+>>>>>>> nmrnkd
 		while(true) {
 			System.out.println("1.박상진");
 			System.out.println("2.김여진");
@@ -33,8 +42,13 @@ public class MainClass {
 				sjhs.main(args);
 				break;
 			case 2:
+<<<<<<< HEAD
 				Nmrnkd_Arr.main(args);
 				Nmrnkd_Hmap.main(args);
+=======
+				n_arr.main(args);
+				n_hmap.main(args);
+>>>>>>> nmrnkd
 				break;
 			case 3:
 				hs h = new hs();

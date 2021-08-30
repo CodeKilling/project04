@@ -11,8 +11,10 @@ public class sms_hmap {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		HashMap<String, StDTO> map = new HashMap<String, StDTO>();
-		String name, stNum;
-		int num;	
+		String name, stNum; int num;	
+		
+		System.out.println("HashMap으로 구현한 프로그램");
+		
 		while(true) {
 			System.out.println("1.등록 2.보기 3.종료");
 			num = input.nextInt();
