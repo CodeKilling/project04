@@ -60,6 +60,9 @@ public class MainClass {
 				psy = new PsyST();
 				psy.display();
 				break;
+			case 6:
+				System.out.println("Program Exit.");
+				System.exit(0);
 			default:
 				break;
 			}
